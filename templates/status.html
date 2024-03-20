@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+</head>
+
+<body>
+    <h1>Status</h1>
+    <div>
+        <p>{{ .status }}</p>
+        <p>{{ .statusString }}</p>
+    </div>
+    <script>
+        // Reload page every 15 seconds
+        setInterval(function () {
+            window.location.reload();
+        }, 15000);
+    </script>
+</body>
+
+</html>
